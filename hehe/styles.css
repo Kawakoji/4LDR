@@ -1,0 +1,613 @@
+* {
+    box-sizing : border-box;
+    marge :  0 ;
+    remplissage :  0 ;
+    font-family :  'Kumbh Sans' , sans-serif;
+  }
+  
+  . barre de navigation {
+    fond :  # 131313 ;
+    hauteur :  80 px ;
+    affichage : flexible ;
+    justifier-contenu : centre;
+    align-items : center;
+    taille de police :  1,2 rem ;
+    position : collante;
+    haut :  0 ;
+    index z :  999 ;
+  }
+  
+  . navbar__container {
+    affichage : flexible ;
+    justifier-contenu : espace-entre;
+    hauteur :  80 px ;
+    index z :  1 ;
+    largeur :  100 % ;
+    largeur max :  1300 px ;
+    marge-droite : auto;
+    marge-gauche : auto;
+    padding-right :  50 px ;
+    remplissage-gauche :  50 px ;
+  }
+  
+  # navbar__logo {
+    couleur de fond :  # ff8177 ;
+    background-image :  linear-gradient (vers le haut ,  # ff0844  0 % ,  # ffb199  100 % );
+    taille du fond :  100 % ;
+    -webkit-background-clip : texte ;
+    -moz-background-clip : texte;
+    -webkit-text-fill-color : transparent ;
+    -moz-text-fill-color : transparent;
+    affichage : flexible ;
+    align-items : center;
+    curseur : pointeur;
+    texte-décoration : aucun;
+    taille de police :  2 rem ;
+  }
+  
+  . fa-gem {
+    marge-droite :  0.5 rem ;
+  }
+  
+  . navbar__menu {
+    affichage : flexible ;
+    align-items : center;
+    style de liste : aucun;
+    text-align : center;
+  }
+  
+  . navbar__item {
+    hauteur :  80 px ;
+  }
+  
+  . navbar__links {
+    couleur :  # fff ;
+    affichage : flexible ;
+    align-items : center;
+    justifier-contenu : centre;
+    texte-décoration : aucun;
+    rembourrage :  0  1 rem ;
+    hauteur :  100 % ;
+  }
+  
+  . navbar__btn {
+    affichage : flexible ;
+    justifier-contenu : centre;
+    align-items : center;
+    rembourrage :  0  1 rem ;
+    largeur :  100 % ;
+  }
+  
+  . bouton {
+    affichage : flexible ;
+    justifier-contenu : centre;
+    align-items : center;
+    texte-décoration : aucun;
+    remplissage :  10 px  20 px ;
+    hauteur :  100 % ;
+    largeur :  100 % ;
+    bordure : aucune;
+    contour : aucun;
+    border-radius :  4 px ;
+    fond :  # f77062 ;
+    couleur :  # fff ;
+  }
+  
+  . bouton : survolez {
+    fond :  # 4837ff ;
+    transition : toutes les 0,3 s d' aisance ;
+  }
+  
+  . navbar__links : vol stationnaire {
+    couleur :  # f77062 ;
+    transition : toutes les 0,3 s d' aisance ;
+  }
+  
+  @media screen et ( max-width :  960 px ) {
+    . navbar__container {
+      affichage : flexible ;
+      justifier-contenu : espace-entre;
+      hauteur :  80 px ;
+      index z :  1 ;
+      largeur :  100 % ;
+      largeur max :  1300 px ;
+      remplissage :  0 ;
+    }
+  
+    . navbar__menu {
+      affichage : grille;
+      grid-template-columns : auto;
+      marge :  0 ;
+      largeur :  100 % ;
+      position : absolue;
+      haut :  -1000 px ;
+      opacité :  1 ;
+      transition : toutes les 0,5 s d' aisance ;
+      hauteur :  50 vh ;
+      index z :  -1 ;
+    }
+  
+    . navbar__menu . actif {
+      fond :  # 131313 ;
+      haut :  100 % ;
+      opacité :  1 ;
+      transition : toutes les 0,5 s d' aisance ;
+      index z :  99 ;
+      hauteur :  50 vh ;
+      taille de police :  1,6 rem ;
+    }
+  
+    # navbar__logo {
+      remplissage-gauche :  25 px ;
+    }
+  
+    . navbar__toggle . barre {
+      largeur :  25 px ;
+      hauteur :  3 px ;
+      marge :  5 px auto ;
+      transition : toutes les 0,3 s easy-in-out ;
+      fond :  # fff ;
+    }
+  
+    . navbar__item {
+      largeur :  100 % ;
+    }
+  
+    . navbar__links {
+      text-align : center;
+      rembourrage :  2 rem ;
+      largeur :  100 % ;
+      affichage : tableau;
+    }
+  
+    . navbar__btn {
+      rembourrage bas :  2 rem ;
+    }
+  
+    . bouton {
+      affichage : flexible ;
+      justifier-contenu : centre;
+      align-items : center;
+      largeur :  80 % ;
+      hauteur :  80 px ;
+      marge :  0 ;
+    }
+  
+    # menu-mobile {
+      position : absolue;
+      haut :  20 % ;
+      à droite :  5 % ;
+      transformer :  translate ( 5 % ,  20 % ) ;
+    }
+  
+    . navbar__toggle . barre {
+      affichage : bloc;
+      curseur : pointeur;
+    }
+  
+    # menu-mobile . est-actif . barre : nième-enfant ( 2 ) {
+      opacité :  0 ;
+    }
+  
+    # menu-mobile . est-actif . barre : nième-enfant ( 1 ) {
+      transform :  translateY ( 8 px ) rotation ( 45 deg ) ;
+    }
+  
+    # menu-mobile . est-actif . barre : nième-enfant ( 3 ) {
+      transform :  translateY ( -8 px ) rotation ( -45 deg );
+    }
+  }
+  
+  /* CSS du contenu principal */
+  . principal {
+    couleur de fond :  # 141414 ;
+  }
+  
+  . main__conteneur {
+    affichage : grille;
+    grille-template-colonnes :  1 fr  1 fr ;
+    align-items : center;
+    justifier-soi : centre;
+    marge :  0 automatique ;
+    hauteur :  90 vh ;
+    couleur de fond :  # 131313 ;
+    index z :  1 ;
+    largeur :  100 % ;
+    largeur max :  1300 px ;
+    padding-right :  50 px ;
+    remplissage-gauche :  50 px ;
+  }
+  
+  . main__content {
+    couleur :  # fff ;
+    largeur :  100 % ;
+  }
+  
+  . main__content  h1 {
+    taille de police :  4 rem ;
+    couleur de fond :  # ff8177 ;
+    background-image :  linear-gradient (vers le haut ,  # ff0844  0 % ,  # ffb199  100 % );
+    taille du fond :  100 % ;
+    -webkit-background-clip : texte ;
+    -moz-background-clip : texte;
+    -webkit-text-fill-color : transparent ;
+    -moz-text-fill-color : transparent;
+  }
+  
+  . main__content  h2 {
+    taille de police :  4 rem ;
+    marge supérieure :  10 px ;
+    couleur de fond :  # ff8177 ;
+    background-image :  linear-gradient ( -20 deg ,  # b721ff  0 % ,  # 21d4fd  100 % );
+    taille du fond :  100 % ;
+    -webkit-background-clip : texte ;
+    -moz-background-clip : texte;
+    -webkit-text-fill-color : transparent ;
+    -moz-text-fill-color : transparent;
+  }
+  
+  . main__content  p {
+    marge supérieure :  1 rem ;
+    taille de police :  2 rem ;
+    font-weight :  700 ;
+  }
+  
+  . main__btn {
+    taille de police :  1 rem ;
+    background-image :  linear-gradient (vers le haut ,  # f77062  0 % ,  # fe5196  100 % );
+    remplissage :  14 px  32 px ;
+    bordure : aucune;
+    border-radius :  4 px ;
+    couleur :  # fff ;
+    marge supérieure :  2 rem ;
+    curseur : pointeur;
+    position : relative ;
+    transition : toutes 0,35 s ;
+    contour : aucun;
+  }
+  
+  . main__btn  a {
+    position : relative ;
+    z-index :  2 ;
+    couleur :  # fff ;
+    texte-décoration : aucun;
+  }
+  
+  . main__btn : après {
+    position : absolue;
+    contenu :  '' ;
+    haut :  0 ;
+    gauche :  0 ;
+    largeur :  0 ;
+    hauteur :  100 % ;
+    fond :  # 4837ff ;
+    transition : toutes 0,35 s ;
+    border-radius :  4 px ;
+  }
+  
+  . main__btn : vol stationnaire {
+    couleur :  # fff ;
+  }
+  
+  . main__btn : survoler : après {
+    largeur :  100 % ;
+  }
+  
+  . main__img--conteneur {
+    text-align : center;
+  }
+  
+  # main__img {
+    hauteur :  80 % ;
+    largeur :  80 % ;
+  }
+  
+  /* Responsive Mobile */
+  @media screen et ( max-width :  768 px ) {
+    . main__conteneur {
+      affichage : grille;
+      grid-template-columns : auto;
+      align-items : center;
+      justifier-soi : centre;
+      largeur :  100 % ;
+      marge :  0 automatique ;
+      hauteur :  90 vh ;
+    }
+  
+    . main__content {
+      text-align : center;
+      marge-bas :  4 rem ;
+    }
+  
+    . main__content  h1 {
+      taille de police :  2,5 rem ;
+      marge supérieure :  2 rem ;
+    }
+  
+    . main__content  h2 {
+      taille de police :  3 rem ;
+    }
+  
+    . main__content  p {
+      marge supérieure :  1 rem ;
+      taille de police :  1,5 rem ;
+    }
+  }
+  
+  @media screen et ( max-width :  480 px ) {
+    . main__content  h1 {
+      taille de police :  2 rem ;
+      marge supérieure :  3 rem ;
+    }
+  
+    . main__content  h2 {
+      taille de police :  2 rem ;
+    }
+  
+    . main__content  p {
+      marge supérieure :  2 rem ;
+      taille de police :  1,5 rem ;
+    }
+  
+    . main__btn {
+      remplissage :  12 px  36 px ;
+      marge :  2,5 rem  0 ;
+    }
+  }
+  
+  /* Rubrique Services */
+  . services {
+    fond :  # 131313 ;
+    affichage : flexible ;
+    flex-direction : colonne;
+    justifier-contenu : centre;
+    align-items : center;
+    hauteur :  100 vh ;
+  }
+  
+  . services  h1 {
+    couleur de fond :  # ff8177 ;
+    background-image :  linear-gradient (
+      à droite ,
+      # ff8177  0 % ,
+      # ff867a  0 % ,
+      # ff8c7f  21 % ,
+      # f99185  52 % ,
+      # cf556c  78 % ,
+      # b12a5b  100 %
+    );
+    taille du fond :  100 % ;
+    -webkit-background-clip : texte ;
+    -moz-background-clip : texte;
+    -webkit-text-fill-color : transparent ;
+    -moz-text-fill-color : transparent;
+    marge en bas :  5 rem ;
+    taille de police :  2,5 rem ;
+  }
+  
+  . services__conteneur {
+    affichage : flexible ;
+    justifier-contenu : centre;
+    flex-wrap : envelopper;
+  }
+  
+  . services__card {
+    marge :  1 rem ;
+    hauteur :  525 px ;
+    largeur :  400 px ;
+    border-radius :  4 px ;
+    background-image :  linear-gradient (
+        vers le bas ,
+        rgba ( 0 ,  0 ,  0 ,  0 ) 0 % ,
+        rgba ( 17 ,  17 ,  17 ,  0,6 ) 100 %
+      ) ,
+      url ( '/images/pic3.jpg' );
+    background-size : couverture ;
+    position : relative ;
+    couleur :  # fff ;
+  }
+  
+  . services__card : avant {
+    opacité :  0.2 ;
+  }
+  
+  . services__card : nième-enfant ( 2 ) {
+    background-image :  linear-gradient (
+        vers le bas ,
+        rgba ( 0 ,  0 ,  0 ,  0 ) 0 % ,
+        rgba ( 17 ,  17 ,  17 ,  0.9 ) 100 %
+      ) ,
+      url ( '/images/pic4.jpg' );
+  }
+  
+  . services__carte  h2 {
+    position : absolue;
+    haut :  350 px ;
+    gauche :  30 px ;
+  }
+  
+  . services__card  p {
+    position : absolue;
+    haut :  400 px ;
+    gauche :  30 px ;
+  }
+  
+  . bouton services__card  {
+    couleur :  # fff ;
+    remplissage :  10 px  20 px ;
+    bordure : aucune;
+    contour : aucun;
+    border-radius :  4 px ;
+    fond :  # f77062 ;
+    position : absolue;
+    haut :  440 px ;
+    gauche :  30 px ;
+    taille de police :  1 rem ;
+  }
+  
+  . bouton services__card  : survolez {
+    curseur : pointeur;
+  }
+  
+  . services__card : survolez {
+    transformer :  échelle ( 1.075 );
+    transition :  0,2 s d' accélération ;
+    curseur : pointeur;
+  }
+  
+  @media screen et ( max-width :  960 px ) {
+    . services {
+      hauteur :  1600 px ;
+    }
+  
+    . services  h1 {
+      taille de police :  2 rem ;
+      marge supérieure :  12 rem ;
+    }
+  }
+  
+  @media screen et ( max-width :  480 px ) {
+    . services {
+      hauteur :  1400 px ;
+    }
+  
+    . services  h1 {
+      taille de police :  1,2 rem ;
+    }
+  
+    . services__card {
+      largeur :  300 px ;
+    }
+  }
+  
+  /* CSS de pied de page */
+  . footer__container {
+    couleur de fond :  # 141414 ;
+    rembourrage :  5 rem  0 ;
+    affichage : flexible ;
+    flex-direction : colonne;
+    justifier-contenu : centre;
+    align-items : center;
+  }
+  
+  # footer__logo {
+    couleur :  # fff ;
+    affichage : flexible ;
+    align-items : center;
+    curseur : pointeur;
+    texte-décoration : aucun;
+    taille de police :  2 rem ;
+  }
+  
+  . footer__links {
+    largeur :  100 % ;
+    largeur max :  1000 px ;
+    affichage : flexible ;
+    justifier-contenu : centre;
+  }
+  
+  . footer__link -- wrapper {
+    affichage : flexible ;
+  }
+  
+  . footer__link -- éléments {
+    affichage : flexible ;
+    flex-direction : colonne;
+    align-items : flex-start;
+    marge :  16 px ;
+    text-align : gauche ;
+    largeur :  160 px ;
+    box-sizing : border-box;
+  }
+  
+  . footer__link -- éléments  h2 {
+    marge en bas :  16 px ;
+  }
+  
+  . footer__link--items  >  h2 {
+    couleur :  # fff ;
+  }
+  
+  . footer__link -- éléments  a {
+    couleur :  # fff ;
+    texte-décoration : aucun;
+    marge-bas :  0.5 rem ;
+  }
+  
+  . footer__link--items  a : hover {
+    couleur :  # e9e9e9 ;
+    transition :  0,3 s de détente ;
+  }
+  
+  /* Icônes sociales */
+  . social__icon--lien {
+    couleur :  # fff ;
+    taille de police :  24 px ;
+  }
+  
+  . social__media {
+    largeur max :  1000 px ;
+    largeur :  100 % ;
+  }
+  
+  . social__media--wrap {
+    affichage : flexible ;
+    justifier-contenu : espace-entre;
+    align-items : center;
+    largeur :  90 % ;
+    largeur max :  1000 px ;
+    marge :  40 px auto 0 auto ;
+  }
+  
+  . social__icons {
+    affichage : flexible ;
+    justifier-contenu : espace-entre;
+    align-items : center;
+    largeur :  240 px ;
+  }
+  
+  . social__logo {
+    couleur :  # fff ;
+    justifier-self : démarrer;
+    marge-gauche :  20 px ;
+    curseur : pointeur;
+    texte-décoration : aucun;
+    taille de police :  2 rem ;
+    affichage : flexible ;
+    align-items : center;
+    marge en bas :  16 px ;
+  }
+  
+  . site__droits {
+    couleur :  # fff ;
+  }
+  
+  @media screen et ( max-width :  820 px ) {
+    . footer__links {
+      rembourrage dessus :  2 rem ;
+    }
+  
+    # footer__logo {
+      marge en bas :  2 rem ;
+    }
+  
+    . site__droits {
+      marge en bas :  2 rem ;
+    }
+  
+    . footer__link -- wrapper {
+      flex-direction : colonne;
+    }
+  
+    . social__media--wrap {
+      flex-direction : colonne;
+    }
+  }
+  
+  @media screen et ( max-width :  480 px ) {
+    . footer__link -- éléments {
+      marge :  0 ;
+      remplissage :  10 px ;
+      largeur :  100 % ;
+    }
+  }
